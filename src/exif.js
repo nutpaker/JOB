@@ -2,7 +2,7 @@
 
   var debug = false;
 
-  var root = this;
+  // var this = this;
 
   var EXIF = function(obj) {
     if (obj instanceof EXIF) return obj;
@@ -16,7 +16,7 @@
     }
     exports.EXIF = EXIF;
   } else {
-    root.EXIF = EXIF;
+    this.EXIF = EXIF;
   }
 
   var ExifTags = EXIF.Tags = {
